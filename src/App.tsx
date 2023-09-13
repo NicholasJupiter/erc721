@@ -300,7 +300,7 @@ export default function Home() {
             
             {/* <div className="mt-8 flex w-full xs:mb-8 xs:mt-0 lg:hidden">
               <HeadingImage
-                src={contractMetadata.data?.image || firstNft?.metadata.image}
+                src={(contractMetadata.data?.image || firstNft?.metadata.image) as any}
                 isLoading={isLoading}
               />
             </div> */}
